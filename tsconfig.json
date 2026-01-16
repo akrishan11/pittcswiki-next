@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/scheduling/page.mdx"
+    "app/guides/academics/scheduling/page.mdx"
   ],
   "exclude": ["node_modules"]
 }
