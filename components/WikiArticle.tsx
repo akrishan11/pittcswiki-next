@@ -11,6 +11,8 @@ import { GuideMetadata, formatDate } from "@/utils/guide-metadata"
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeSlug from "rehype-slug"
+import { useState } from "react"
+import dynamic from "next/dynamic"
 
 type WikiArticleProps = {
   file: string
@@ -38,6 +40,17 @@ const WikiArticle = ({
   let relevantContent = file.slice(startIndex, -1)
 
   const lines = relevantContent.split("\n")
+
+  let isMDX = false
+  let MDXComponent = dynamic(() => import(file), {
+    ssr: false,
+  })
+  if (file.slice(-3) === "mdx") {
+    isMDX = true
+    MDXComponent = dynamic(() => import(file), {
+      ssr: false,
+    })
+  }
 
   // Filter lines that start with '#'
   const hashLines = lines.filter((line) => line.trim().startsWith("#"))
@@ -83,12 +96,12 @@ const WikiArticle = ({
                     <div className="flex items-center gap-2 whitespace-nowrap flex-shrink-0">
                       <span>{metadata.readingTime} min</span>
                       <span className="hidden sm:inline text-gray-400">•</span>
-                      <ExportPDFButton
+                      {/* <ExportPDFButton
                         title={frontmatter.title}
                         author={metadata.originalAuthor || metadata.author}
                         publishDate={formatDate(metadata.created)}
                         contentSelector=".blog-post-content"
-                      />
+                      /> */}
                     </div>
                   </div>
                   {metadata.updaters && metadata.updaters.length > 0 && (
@@ -102,12 +115,16 @@ const WikiArticle = ({
             </header>
             <FreshnessDisclaimer lastUpdated={gitAuthorTime} />
             <div className="blog-post-content">
-              <Markdown
-                remarkPlugins={[remarkGfm]}
-                rehypePlugins={[rehypeSlug]}
-              >
-                {relevantContent}
-              </Markdown>
+              {isMDX ? (
+                <MDXComponent />
+              ) : (
+                <Markdown
+                  remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeSlug]}
+                >
+                  {relevantContent}
+                </Markdown>
+              )}
             </div>
             <RelatedGuides related={frontmatter.related} />
             <SocialShare title={frontmatter.title} />

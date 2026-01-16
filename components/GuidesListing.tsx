@@ -18,12 +18,17 @@ const importedGuides: string[] = [
 
 let posts = []
 
+console.log(importedGuides)
+
 for (let guide of importedGuides) {
   let guideData = getMDFrontMatter(guide)
+  console.log(guideData)
   guideData["href"] =
     "guides/" + guideData.title.toLowerCase().replaceAll(" ", "-")
   posts.push(guideData)
 }
+
+console.log(posts)
 
 const guides = posts.map((post, index) => (
   <Link

@@ -1,15 +1,27 @@
----
-title: "Scheduling Classes"
-related:
-  [
-    "Course Explorer",
-    "/courses/",
-    "Double Majoring",
-    "/academics/majors/",
-    "Minors",
-    "/academics/minors/",
-  ]
----
+# Scheduling Classes
+
+Let's look at the core CS classes required for the major. It
+might look intimadating at first, but it just shows the requirements
+of classes. For example, to take CS 1501, you must take CS 441 and CS 445.
+
+The dashed lines mean those classes are "coreqs". For example, you can take CS 449 if you are taking CS 447 in the semester. But, you cannot take
+CS 449 before CS 447.
+
+<CourseGraph
+  reqs={[
+    ["CMP401", "CS445"],
+    ["CS441", "CS1502"],
+    ["CS441", "CS1501"],
+    ["CS445", "CS447", { type: "coreq" }],
+    ["CS445", "CS1502"],
+    ["CS445", "CS449"],
+    ["CS447", "CS449", { type: "coreq" }],
+    ["CS445", "CS1501"],
+    ["CS447", "CS1550"],
+    ["CS449", "CS1550"],
+  ]}
+  showPreview="true"
+/>
 
 ## Overview
 
@@ -147,6 +159,12 @@ We would likely take some light gen-eds with CS 1501. As noted, it is demanding 
 You discover your interests in CS as you take some electives. You're not limited to take classes in a certain domain, but try to take classes that you'll enjoy. Electives are meant to cover topics you want to explore, not classes you suffer in. For example, if you didn't enjoy CS 447 or 449, you probably don't want to take Computer Architecture (CS 1541) or Operating Systems (CS 1550). On the other hand, if you enjoy certain parts of CS 1501, such as the introduction to cryptography section, CS 1653 would probably be a good elective to take.
 
 Check out the [course explorer](/courses) to look at the different electives that are offered. Pick the ones that pique your interest.
+
+## CSC's highly subjective CS Electives Difficulty Ranking
+
+These rankings are incredibly subjective and difficulty varies more by professor rather than course. Note that courses in the unknown tier have not been offered since at least Fall 2022. The professors listed are from Spring, Summer and Fall 2023 and are subject to change.
+
+<ElectivesRankingTable />
 
 ## FAQ
 

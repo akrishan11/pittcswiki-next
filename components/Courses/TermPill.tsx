@@ -9,9 +9,9 @@ const TermPills = ({ termsMap }: TermPillProps) => {
     <div className="m-0">
       <span
         className={
-          "border px-1 mr-2 " +
+          " py-1 px-2 mr-2 " +
           (termsMap.FALL
-            ? "bg-green-400  text-green-800 border-green-500"
+            ? "bg-green-500  rounded-md text-white "
             : "text-gray-300")
         }
       >
@@ -19,9 +19,9 @@ const TermPills = ({ termsMap }: TermPillProps) => {
       </span>
       <span
         className={
-          "border px-1 mr-2 " +
+          " px-2 py-1 mr-2 " +
           (termsMap.SPRING
-            ? "bg-green-400 text-green-800  border-green-500"
+            ? "bg-green-500 text-white rounded-md "
             : "text-gray-300")
         }
       >
@@ -29,9 +29,9 @@ const TermPills = ({ termsMap }: TermPillProps) => {
       </span>
       <span
         className={
-          "border px-1 " +
+          " py-1 px-2 " +
           (termsMap.SUMMER
-            ? "bg-green-400  text-green-800  border-green-500"
+            ? "bg-green-500  text-white rounded-md"
             : "text-gray-300")
         }
       >
