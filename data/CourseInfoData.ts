@@ -9,7 +9,7 @@ export type CourseInfoDataType = {
 
 export const CourseInfoData: CourseInfoDataType = {
   "metadata": {
-    "generated": "2026-01-18T01:01:32.894Z"
+    "generated": "2026-01-25T01:03:32.695Z"
   },
   "courses": [
     {
