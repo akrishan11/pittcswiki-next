@@ -9,7 +9,7 @@ export type CourseInfoDataType = {
 
 export const CourseInfoData: CourseInfoDataType = {
   "metadata": {
-    "generated": "2026-01-25T01:03:32.695Z"
+    "generated": "2026-02-01T01:16:58.796Z"
   },
   "courses": [
     {
@@ -1909,8 +1909,7 @@ export const CourseInfoData: CourseInfoDataType = {
       },
       "instructors": [
         "Emma Jordan",
-        "Jacob Biehl",
-        "Longfei Shangguan"
+        "Jacob Biehl"
       ]
     },
     {
@@ -2391,7 +2390,7 @@ export const CourseInfoData: CourseInfoDataType = {
       },
       "instructors": [
         "Emma Jordan",
-        "Longfei Shangguan"
+        "TBD"
       ]
     },
     {
@@ -2740,6 +2739,7 @@ export const CourseInfoData: CourseInfoDataType = {
         "Kirk Pruhs",
         "Longfei Shangguan",
         "Lorraine Li",
+        "Michael Yoder",
         "Milos Hauskrecht",
         "Nils Murrugarra LLerena",
         "Panos Chrysanthis",
