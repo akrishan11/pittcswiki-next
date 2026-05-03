@@ -9,7 +9,7 @@ export type CourseInfoDataType = {
 
 export const CourseInfoData: CourseInfoDataType = {
   "metadata": {
-    "generated": "2026-04-26T01:30:42.407Z"
+    "generated": "2026-05-03T01:48:41.181Z"
   },
   "courses": [
     {
@@ -38,9 +38,7 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": true,
         "SUMMER": false
       },
-      "instructors": [
-        "Rachel Parkes"
-      ]
+      "instructors": []
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0010",
@@ -54,9 +52,7 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": true,
         "SUMMER": false
       },
-      "instructors": [
-        "Joseph Graham"
-      ]
+      "instructors": []
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0011",
@@ -70,9 +66,7 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": true,
         "SUMMER": false
       },
-      "instructors": [
-        "Joseph Graham"
-      ]
+      "instructors": []
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0020",
