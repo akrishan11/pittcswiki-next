@@ -9,7 +9,7 @@ export type CourseInfoDataType = {
 
 export const CourseInfoData: CourseInfoDataType = {
   "metadata": {
-    "generated": "2026-07-26T01:44:50.394Z"
+    "generated": "2026-08-02T01:44:10.317Z"
   },
   "courses": [
     {
@@ -24,7 +24,16 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": false,
         "SUMMER": false
       },
-      "instructors": []
+      "instructors": [
+        "Anna Hermann",
+        "Emily Bennett",
+        "Emily Park",
+        "Jen Gentzel",
+        "John Faulkner",
+        "Kailyn Lukaszewski",
+        "Kristine Pugliese",
+        "Rachel Parkes"
+      ]
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0002",
@@ -38,7 +47,9 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": true,
         "SUMMER": false
       },
-      "instructors": []
+      "instructors": [
+        "Rachel Parkes"
+      ]
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0010",
@@ -52,7 +63,10 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": true,
         "SUMMER": false
       },
-      "instructors": []
+      "instructors": [
+        "Joseph Graham",
+        "William Garrison"
+      ]
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0011",
@@ -66,7 +80,10 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": true,
         "SUMMER": false
       },
-      "instructors": []
+      "instructors": [
+        "Joseph Graham",
+        "William Garrison"
+      ]
     },
     {
       "sci_href": "https://courses.sci.pitt.edu/courses/view/CMPINF-0020",
@@ -766,7 +783,9 @@ export const CourseInfoData: CourseInfoDataType = {
         "SPRING": false,
         "SUMMER": false
       },
-      "instructors": []
+      "instructors": [
+        "TBD"
+      ]
     }
   ]
 }
