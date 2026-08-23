@@ -9,7 +9,7 @@ export type CourseInfoDataType = {
 
 export const CourseInfoData: CourseInfoDataType = {
   "metadata": {
-    "generated": "2026-08-16T00:37:30.783Z"
+    "generated": "2026-08-23T00:38:44.541Z"
   },
   "courses": [
     {
@@ -25,14 +25,15 @@ export const CourseInfoData: CourseInfoDataType = {
         "SUMMER": false
       },
       "instructors": [
+        "Amy Vaught",
         "Anna Hermann",
         "Emily Bennett",
         "Emily Park",
         "Jen Gentzel",
+        "Jennifer Welton",
         "John Faulkner",
-        "Kailyn Lukaszewski",
         "Kristine Pugliese",
-        "Rachel Parkes"
+        "Lynnsey Doane"
       ]
     },
     {
