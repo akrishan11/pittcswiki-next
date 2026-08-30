@@ -9,7 +9,7 @@ export type CourseInfoDataType = {
 
 export const CourseInfoData: CourseInfoDataType = {
   "metadata": {
-    "generated": "2026-08-23T00:38:44.541Z"
+    "generated": "2026-08-30T02:13:03.761Z"
   },
   "courses": [
     {
@@ -780,13 +780,11 @@ export const CourseInfoData: CourseInfoDataType = {
       "description": "",
       "requirements": "Department Consent Required\n            Course Attributes: GER Pmathic Ctext: Ethical/Pol",
       "terms_offered": {
-        "FALL": true,
+        "FALL": false,
         "SPRING": false,
         "SUMMER": false
       },
-      "instructors": [
-        "TBD"
-      ]
+      "instructors": []
     }
   ]
 }
